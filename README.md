@@ -2,7 +2,7 @@
 
 # What is "FunQL"?
 
-Something with PostgreSQL, so that everybody can enjoy power
+Something with PostgreSQL, so that everybody can enjoy the power
 of SQL.
 
 # Install
