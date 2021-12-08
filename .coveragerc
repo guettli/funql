@@ -4,7 +4,7 @@ omit =
  */migrations/*.py
 
 source =
- stoic_config
+ funql
 
 [html]
 directory = coverage_html_report

@@ -20,8 +20,8 @@ echo 'export $(cut -d= -f1 $VIRTUAL_ENV/src/funql/.env)' >> bin/activate
 . bin/activate
 
 # You need to have PostgreSQL installed
-# Create user "stoic_config" with password "stoic_config":
-sudo runuser -u postgres -- createuser -s -P stoic_config
+# Create user "funql" with password "funql":
+sudo runuser -u postgres -- createuser -s -P funql
 
 createdb $PGDATABASE
 manage.py migrate
