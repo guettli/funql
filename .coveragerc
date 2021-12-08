@@ -1,0 +1,10 @@
+[run]
+omit =
+ *_test.py
+ */migrations/*.py
+
+source =
+ stoic_config
+
+[html]
+directory = coverage_html_report
