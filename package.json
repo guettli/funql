@@ -1,0 +1,6 @@
+{
+	"name": "funql",
+	"dependencies": {
+		"htmx.org": ">=1.6.1"
+	}
+}
