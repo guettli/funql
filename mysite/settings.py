@@ -32,6 +32,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites', # for django-allauth only
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.microsoft',
+
 ]
 
 MIDDLEWARE = [
@@ -133,3 +142,4 @@ if DEBUG:
 else:
     DEFAULT_FROM_EMAIL = 'info.traverse@thomas-guettler.de'
 
+SITE_ID = 1
