@@ -33,14 +33,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites', # for django-allauth only
-
+    'fun',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.microsoft',
-
 ]
 
 MIDDLEWARE = [
@@ -143,3 +142,16 @@ else:
     DEFAULT_FROM_EMAIL = 'info.traverse@thomas-guettler.de'
 
 SITE_ID = 1
+
+AUTH_USER_MODEL = 'fun.FunUser'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
+
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
+
+ACCOUNT_USERNAME_BLACKLIST = ['postgres', 'postgresql']
+
